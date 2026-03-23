@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <title>FreeLivingDesigns Portfolio Site</title>
+</head>
+<body id="top">
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<span id="menu-closed" class="menu-state" aria-hidden="true"></span>
+<span id="menu-open" class="menu-state" aria-hidden="true"></span>
+<!-- site logo -->
+<img src="images/freelivinglogo.png" alt="FreeLivingDesigns Logo" class="logo" decoding="async">
+  
+<!-- Header with site title and navigation -->
+  <header>
+    <h1>Tom Black <br>
+        Front-End Web Designer</h1>
+    <nav aria-label="Primary">
+      <ul class="nav-list">
+        <li class="nav-dropdown">
+          <a class="menu-toggle menu-toggle-open" href="#menu-open" aria-haspopup="true">Menu</a>
+          <a class="menu-toggle menu-toggle-close" href="#menu-closed" aria-haspopup="true">Menu</a>
+          <ul class="dropdown-list">
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <!-- About Me section -->
+  <section id="about">
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>Hi, I am Tom Black, a front-end web developer with a strong focus on building modern, responsive websites. I am passionate about WordPress and enjoy combining it with clean, semantic HTML and well-structured CSS to create user-friendly digital experiences. My work so far has focused on mobile-first design, accessible page structure, and thoughtful layout systems using Flexbox and Grid, while adding polished interaction through transitions and animations. I specialize in HTML, CSS, and JavaScript, and I am always aiming to improve both usability and visual quality in every project.</p>
+    </div>
+    <img src="images/tom.jpg" alt="Tom Black, a front-end web designer with glasses and reddish-brown hair, sitting at a table in a modern office with geometric wall panels. He wears a light beige sweater over a white collared shirt and has a composed, professional expression. A red and white checkered board is visible on the table in front of him. Text reading TOM BLACK appears to the right of his image." class="profile-image" loading="lazy" decoding="async">
+  </section>
+    <!-- Portfolio section -->
+<section id="portfolio">
+  <h2>Portfolio</h2>
+  <div class="portfolio-grid">
+
+    <!-- Project 1 -->
+    <article class="project-card">
+      <h3>Reskin Aesthetics WordPress Portfolio Website</h3>
+      <figure>
+        <video controls loop muted preload="metadata" poster="images/reskin-cover.png">
+          <source src="videos/reskin.mp4" type="video/mp4">
+          Your browser does not support video playback.
+        </video>
+        <figcaption>Above showcases the Reskin WordPress site — a project featuring integrated Google reviews, interactive treatment sliders, and an e-commerce section for branded products. I built it using a child theme and I am eager to keep improving it with more interactive, colourful CSS styling.</figcaption>
+      </figure>
+    </article>
+
+    <!-- Project 2 -->
+    <article class="project-card">
+      <h3>Sunglide Online WordPress Portfolio Website</h3>
+      <figure>
+        <video controls loop muted preload="metadata" poster="images/sunglide-cover.png">
+          <source src="videos/sunglideonline.mp4" type="video/mp4">
+          Your browser does not support video playback.
+        </video>
+        <figcaption>Above showcases a WordPress site with WooCommerce — a B2B E-Commerce platform I built from scratch with tiered pricing for different customer types. I am eager to enhance the user experience and apply new interactive concepts.</figcaption>
+      </figure>
+    </article>
+
+  </div>
+</section>
+  </main>
+  
+  
+
+
+  <!-- Footer section -->
+  <footer id="footer-feedback">
+    <p>&copy; 2026 FreeLivingDesigns. All rights reserved.</p>
+    <div class="feedback-section">
+      <p class="feedback-label">Rate this website:</p>
+      <div class="feedback-buttons">
+        <a href="#rate-up" class="emoji-btn" title="Thumbs Up">👍</a>
+        <a href="#rate-excited" class="emoji-btn" title="Excited">😍</a>
+        <a href="#rate-party" class="emoji-btn" title="Party">🎉</a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="rate-up" class="feedback-overlay">
+    <div class="feedback-modal">
+      <p class="feedback-thanks">Thank you for your feedback!</p>
+      <form class="feedback-form" action="mailto:freelivingdesigns@gmail.com" method="post" enctype="text/plain">
+        <input type="hidden" name="Rating" value="Thumbs Up 👍">
+        <label for="feedback-up">Send me feedback on the website:</label>
+        <textarea id="feedback-up" name="Message" rows="5" required></textarea>
+        <div class="feedback-actions">
+          <button type="submit">Send Feedback</button>
+          <a class="feedback-close" href="#footer-feedback">Close</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="rate-excited" class="feedback-overlay">
+    <div class="feedback-modal">
+      <p class="feedback-thanks">Thank you for your feedback!</p>
+      <form class="feedback-form" action="mailto:freelivingdesigns@gmail.com" method="post" enctype="text/plain">
+        <input type="hidden" name="Rating" value="Excited 😍">
+        <label for="feedback-excited">Send me feedback on the website:</label>
+        <textarea id="feedback-excited" name="Message" rows="5" required></textarea>
+        <div class="feedback-actions">
+          <button type="submit">Send Feedback</button>
+          <a class="feedback-close" href="#footer-feedback">Close</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="rate-party" class="feedback-overlay">
+    <div class="feedback-modal">
+      <p class="feedback-thanks">Thank you for your feedback!</p>
+      <form class="feedback-form" action="mailto:freelivingdesigns@gmail.com" method="post" enctype="text/plain">
+        <input type="hidden" name="Rating" value="Party 🎉">
+        <label for="feedback-party">Send me feedback on the website:</label>
+        <textarea id="feedback-party" name="Message" rows="5" required></textarea>
+        <div class="feedback-actions">
+          <button type="submit">Send Feedback</button>
+          <a class="feedback-close" href="#footer-feedback">Close</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <a id="scroll-step" class="scroll-top scroll-top-stage1" href="#scroll-step" aria-label="Activate scroll to top">Top</a>
+  <a class="scroll-top scroll-top-stage2" href="#top" aria-label="Scroll back to top">↑ Top</a>
+  <p>
+    <img style="border:0;width:88px;height:31px"
+      src="images/W3C CSS validity 1.png"
+      alt="Valid CSS!">
+    </p>
+    <p>
+    <img style="border:0;width:88px;height:31px"
+      src="images/W3C CSS validity 2.png"
+      alt="Valid CSS!">
+    </p>
+</body>
+</html>
